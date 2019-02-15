@@ -13,6 +13,12 @@ module mux4_1_4b(InA, InB, InC, InD, S, Out);
     input [1:0]     S;
     output [N-1:0]  Out;
 
-    // YOUR CODE HERE
+	// use a generate variable to instantiate as many modules as needed. If N was 5 
+ 	// and the inputs and outputs were 5 bits long it would make 5 muxes no problem!
+	genvar i;
+	for (i=0; i < N; i=i+1) begin
+		mux4_1 quadMux(InA[i], InB[i], InC[i], InD[i], S, Out[i]);
+	end
+
 
 endmodule

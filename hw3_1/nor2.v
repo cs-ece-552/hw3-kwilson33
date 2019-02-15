@@ -1,6 +1,6 @@
 /*
     CS/ECE 552 Spring '19
-    Homework #3, Problem 1
+    Homework #3, Problem 2
 
     2 input NOR
 */
